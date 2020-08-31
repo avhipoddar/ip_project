@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="externalSS.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+
+.container {
+  
+  max-width: 100%;
+  margin: auto;
+  height:100%;
+  width:100%
+}
+
+.container img {height:100%; max-width:100%;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  text-align:center;
+  padding: 0px;
+}
+.div2{
+border-radius: 25px;
+  max-width: 40%;
+  border-color: rgb(189, 220, 255);
+  padding: 50px;
+  margin: 20px;
+  height:70%;
+  box-shadow: 5px 5px 5px;
+  font-size: 22px;
+  }
+#submit:hover {
+  width: 120px;
+  height: 40px;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="externalSS.css">
+</head>
+<body>
+<div class="container">
+  <img src="images/sports1.jpg" style="width:99.5%; box-shadow: 15px 15px 40px">
+  <div class="content">
+    <h1 style="text-align:centre;"><b>About Us</b></h1>
+  </div>
+</div>
+
+<div>
+<div style="float:left; box-shadow: 5px 5px 5px; border-radius: 25px;
+  max-width: 54%;
+  border-color: rgb(189, 220, 255);
+  padding: 50px;
+  margin: 20px; font-size: 18px;" class="div1">
+<h2 style="text-align:centre;"><b>WHY RAMAGYA SPORTS ACADEMY?</b></h2><br>
+<p>
+Ramagya Sports Academy was established in 2009 and within a short span of its existence it has already established itself as the Best sports academy in Noida and is ranked amongst top 10 Sports Academies in India. We have more than 25 sports under one roof. Our students who train at Academy under the guidance of professionals have won over 36000 medals and we have a privilege of having over 47000 members who have joined the Ramagya Sports Academy so far. Our students have been selected for various national and international events and have won several medals. We have more than 25 sports under one roof. Our students who train at Academy under the guidance of professionals have won over 36000 medals and we have a privilege of having over 47000 members who have joined the Ramagya Sports Academy so far. We have more than 120 Trained Staff and completed more than 650 Sports Events. Our students have been selected for various national and international events and have won several medals. In the contemporary times when the lifestyle of the people has become sedentary, we at Ramagya Sports Academy have something for everyone. We at Ramagya envisage developing Sporty Culture among the people of the nation. For us, holistic health for all is equally essential as healthy citizens contribute not only in the development of GDP but also strive to bring name, laurels and glory for the nation.
+
+Ramagya Sports Academy is pioneer in the field of Sports when it comes to providing the best Sports activities with international collaborations, globally approved infrastructure, customized sports curriculum, Sports Physioprogrammes (from physios who are associated with the Indian team for various sports) for rehabilitation from Sports injuries, dietary plans, and mentorship from renowned & legendary coaches.
+
+Our Sports programmes are well designed to ensure that every trainee gets optimum benefit by undertaking them. Individualized attention through our modified programmes catering to the strengths of our learners equips them with abilities to excel in the chosen arena of sports, be world ready, get recognized and appreciated for the accolades they win for the nation for their international performance at CWG, Asian Games and Olympics.
+
+Ramagya Sports Academy is always on the lookout for latent talent, spots them & provides them training irrespective of age. Potentially talented sports persons are enrolled in free training programmes undertaken by our Academy where the best of opportunities, international infrastructural facilities, regular updates on performance & great mentors hone the skills of these budding talents and make them prospective medal winners at the world stage.
+</p>
+</div>
+<br>
+<div style="float:left;" class="div2">
+<h2 style="text-align:centre;"><b>VISION</b></h2><br>
+Ramagya Sports Academy is already one of the top ten Sports academies in India. Equipped with state of the art equipment and international facilities in the most congenial atmosphere, we foresee ourselves as the frontrunners in the Sports arena. We envision to meet the increasing demands of the changing sports scenario and to earn a high reputation and utmost popularity for being one of the pioneer sports academies in India.
+</div><br>
+<div class="div2" style="float:left;">
+
+<h1 style="text-align:centre;"><b>MISSION</b></h1><br><br>
+Our mission is to provide a wide range of sports and recreational activities to all sports lovers irrespective of their age. We aim to develop Sporty culture and holistic health for all. So Ramagya Sports Academy is committed to providing best in sports infrastructure and expert coaches to judge and carve distinctive talent for holistic value based sports education and help our valuable members understand sports ethics and the habit of fair play.
+</div>
+</div>
+<div style="clear:both">
+</div>
+
+
+
+
+<div class="bgimg"><br><br><br>
+  <div style="margin-left: 50%;">
+<form method="post" class="form">
+          <h2 style="text-align: center;"><b>Enter your details here:</b></h2><br><br>
+          <label for="fname"><b>First Name:</b></label>
+          <input type="text" id="fname" name="fname" placeholder="First Name" size="80" required><br><br>
+          <label for="lname"><b>Last Name:</b></label>
+          <input type="text" id="lname" name="lname" placeholder="Last Name" size="80" required><br><br>
+          <label for="num"><b>Mobile Number:</b></label>
+          <input type="text" id="num" name="num" placeholder="Mobile Number" size="80" maxlength="11" required><br><br>
+          <label for="email"><b>Email ID:</b></label>
+          <input type="email" id="email" name="email" placeholder="Email ID" size="80" required><br><br>
+          <label for="address"><b>Address:</b></label><br>
+          <textarea id="address" name="address" style="width:300px; height:100px;"></textarea><br>
+          <label for="game"><b>Choose Sport:</b></label><br>
+          <div style="float:left;">
+          <h3><b>Outdoor:</b></h3><br>
+          <input type="checkbox" id="cricket" name="game" value="Cricket">
+          <label for="cricket"> Cricket</label><br>
+          <input type="checkbox" id="Football" name="game" value="Football">
+          <label for="Football"> Football</label><br>
+          <input type="checkbox" id="Hockey" name="game" value="Hockey">
+          <label for="Hockey"> Hockey</label><br>
+          <input type="checkbox" id=" Basketball" name="game" value=" Basketball">
+          <label for=" Basketball"> Basketball</label><br>
+          <input type="checkbox" id="Kabaddi" name="game" value="Kabaddi">
+          <label for="Kabaddi"> Kabaddi</label><br>
+          </div>
+          <div style="float:left;">
+          <h3><b>Indoor:</b></h3><br>
+          <input type="checkbox" id="Chess" name="game" value="Chess">
+          <label for="Chess"> Chess</label><br>
+          <input type="checkbox" id="Table Tennis" name="game" value="Table Tennis">
+          <label for="Table Tennis"> Table Tennis</label><br>
+          <input type="checkbox" id="Squash" name="game" value="Squash">
+          <label for="Squash"> Squash</label><br>
+          <input type="checkbox" id="Badminton" name="game" value="Badminton">
+          <label for="Badminton"> Badminton</label><br>
+          <input type="checkbox" id="Carrom" name="game" value="Carrom">
+          <label for="Carrom"> Carrom</label>
+          </div>
+          <div style="clear:both">
+          </div><br><br>
+     <textarea id="message" name="message" style="width:300px; height:100px;" placeholder="Message"></textarea><br><br>
+     <input type="submit" id="submit" value="SUBMIT" size="20" style="background-color:#4CAF50; color: white; cursor: pointer; font-size: 15px;">
+     
+</form>
+
+</div>
+</div>
+
+</body>
+</html>

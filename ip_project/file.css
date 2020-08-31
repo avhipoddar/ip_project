@@ -1,0 +1,426 @@
+#navbar {
+    /* overflow: hidden; */
+    background-color: transparent;
+    padding: 40px 10px; /*Large padding which will shrink on scroll (using JS)*/
+    transition: 0.7s; /* Adds a transition effect when the padding is decreased */
+    position: fixed; /* Sticky/fixed navbar */
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0; /* At the top */
+    /* z-index: 99; */
+    opacity: 0.5;
+    z-index: 10000;
+  }
+  
+  /* Style the navbar links */
+  #navbar a {
+    /* float: left; */
+  
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    /* font-size: 18px; */
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  /* Style the logo */
+  #navbar #logo {
+    font-size: 25px;
+    font-weight: bold;
+    transition: 0.7s;
+    margin-left: 10%;
+  }
+  
+  /* Links on mouse-over */
+  #navbar-right a:hover {
+    /* background-color: red; */
+    color: red;
+    font-weight: bold;
+    
+  }
+  
+  /* Style the active/current link */
+  /* #navbar a.active {
+    background-color: dodgerblue;
+    color: white;
+  } */
+  
+  /* Display some links to the right */
+  #navbar-right {
+    float: right;
+    margin-right: 10%;
+  }
+  
+  /* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+  @media screen and (max-width: 580px) {
+    #navbar {
+      padding: 20px 10px !important;    
+    }
+    #navbar a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    #navbar-right {
+      float: none;
+    }
+  } 
+
+
+
+
+
+
+  /* * {box-sizing: border-box} */
+  body { margin:0}
+  /* .mySlides {display: none} */
+  /* img {vertical-align: middle;} */
+
+/* Slideshow container */
+.slideshow-container {
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+    /* margin: auto; */
+    /* margin: 0px; padding: 0px; border: 0px; margin: none; */
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    /* margin-top: -22px; */
+    
+    /* font-weight: bold; */
+    /* font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 500px; */
+    /* border-radius: 0 3px 3px 0; */
+    /* user-select: none; */
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    /* border-radius: 3px 0 0 3px; */
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    /* background-color: rgba(0,0,0,0.8); */
+    
+    color: red;
+  }
+  
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+
+
+
+  /* shadow effect */
+
+  .effect2
+{
+  position: relative;
+}
+.effect2:before, .effect2:after
+{
+  z-index: -100000;
+  position: absolute;
+  content: "";
+  bottom: 20%;
+  left: 10px;
+  width: 50%;
+  top: 97%;
+  max-width:150px;
+  height: 10px;
+  background: transparent;
+  /* -webkit-box-shadow: 0 15px 10px rgb(27, 26, 26);
+  -moz-box-shadow: 0 15px 10px #777; */
+  box-shadow: 0 22px 5px rgb(27, 26, 26);
+  /* -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg); */
+  transform: rotate(-4deg);
+}
+.effect2:after
+{
+  /* -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg); */
+  transform: rotate(4deg);
+  right: 15px;
+  left: auto;
+}
+
+
+
+
+/* cross div */
+
+.cross1
+{
+  position: relative;
+}
+.cross1:before, .cross1:after
+{
+  z-index: -100000;
+  position: absolute;
+  content: "";
+  /* bottom: 15px; */
+  /* left: 100px; */
+  width: 90%;
+  top: 8%;
+  max-width:100%;
+  height: 200px;
+  background: transparent;
+  border: 0;
+  background-color:black;
+  /* -webkit-box-shadow: 0 15px 10px rgb(27, 26, 26);
+  -moz-box-shadow: 0 15px 10px #777; */
+  /* box-shadow: 0 22px 5px rgb(27, 26, 26); */
+  /* -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg); */
+  transform: rotate(4deg);
+}
+.cross1:after
+{
+  /* -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg); */
+  transform: rotate(-5deg);
+  max-width:33%;
+  /* right: 10px; */
+  left: 1000px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+  .parallax {
+    /* The image used */
+    background-image: url("images/nature.jpg");
+   
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+
+
+
+
+
+
+
+/* kucsdnfvszighliu */
+
+#home{
+    height:100%;
+    width:100%;
+    background: url("images/nature.jpg");
+      color:white;
+      background-attachment:fixed;
+      background-size:cover;
+  }
+  #spritzer{
+    background: transparent;
+      background-attachment:fixed;
+      background-size:cover;
+  }
+   #uberuns{ 
+    height:10%;
+    width:10%;
+      background:rgba(255,255,255,.9);
+          position:relative;
+  }
+  #uberuns:after {
+      content:'';
+      height:10%;
+    width:10%;
+    background: url("http://upload.wikimedia.org/wikipedia/commons/c/c4/PM5544_with_non-PAL_signals.png");
+      position:absolute;    
+      background-attachment:fixed;
+      background-size:cover;
+      left:0;
+      top:0;
+      z-index:-1;
+  }
+
+  #shape {
+    border-top: 100px solid black;
+    border-right: 60px solid transparent;
+    width: 300px;
+  }
+
+
+
+
+/* video */
+.container-video {
+  border-radius: 25x;
+  position: absolute;
+  width: 100%;
+  /* overflow: hidden; */
+  padding-top: 160.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  border-radius: 25px;
+  position: absolute;
+  top: 0;
+  left: 5%;
+  padding: 2%;
+  /* bottom: 0;
+  right: 0; */
+  width: 90%;
+  height: 20%;
+  border: none;
+}
+
+
+
+  /* ksdgvkzsrb */
+
+  @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+.container {
+	/* max-width: 1000px;
+	margin: 0 auto; */
+	/* overflow: auto; */
+}
+/* 
+header {
+	flex: 1;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+header h1 {
+	font-size: 60px;
+} */
+
+.counters {
+  /* margin: 0 auto;
+  max-width: 1500px; */
+    /* background: black; */
+	color: black;
+	padding: 40px 120px;
+	/* border-top: 3px lightskyblue solid; */
+}
+
+.counters .container {
+	display: grid;
+	grid-template-columns: repeat(4, 2fr);
+	grid-gap: 30px;
+	text-align: center;
+}
+
+/* 
+.counters i {
+	color: lightskyblue;
+	margin-bottom: 5px;
+} */
+
+.counters .counter {
+	font-size: 45px;
+  margin: 10px 0;
+  display: inline-block;
+}
+.counters .counter-plus {
+	font-size: 45px;
+  margin: 10px 0;
+  display: inline-block;
+}
+.counters h3{
+  font-size: 35px;
+}
+
+@media (max-width: 700px) {
+	.counters .container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	/* .counters .container > div:nth-of-type(1),
+	.counters .container > div:nth-of-type(2) {
+		border-bottom: 1px lightskyblue solid;
+		padding-bottom: 20px;
+	}
+} */
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding: 20px;
+}

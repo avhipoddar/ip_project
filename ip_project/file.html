@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="file.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+</head>
+<body>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "30px 10px";
+    // document.getElementById("logo").style.fontSize = "25px";
+    document.getElementById("navbar").style.background = "black";
+    document.getElementById("navbar").style.opacity = 1;
+  } else {
+    document.getElementById("navbar").style.padding = "40px 10px";
+    // document.getElementById("logo").style.fontSize = "35px";
+    document.getElementById("navbar").style.background = "transparent";
+    document.getElementById("navbar").style.opacity = 0.5;
+  }
+}
+    </script>
+    
+
+
+
+    <div  >
+        <div id="navbar" >
+            <a id="logo">APS SPORTS ACADEMY</a>
+            <div id="navbar-right">
+              <a class="active" href="">Home</a>
+              <a href="">About</a>
+              <a href="">Contact</a>
+              <a href="login.php">Login / Signup</a>
+            </div>
+          </div>
+          <div class="effect2">
+            <div class="slideshow-container">
+          
+              <div class="mySlides fade">
+              
+                  <img src="images/image_1.jpg" style="width:100%">
+               
+               
+              </div>
+              
+              <div class="mySlides fade">
+                  <img src="images/image_2.jpg" style="width:100%">
+              
+              </div>
+              
+              <div class="mySlides fade">
+              
+                  <img src="images/image_3.jpg" style="width:100%">
+               
+              </div>
+              <div class="mySlides fade">
+              
+                  <img src="images/image_4.jpg" style="width:100%">
+               
+              </div>
+              <div class="mySlides fade">
+              
+                  <img src="images/image_5.jpg" style="width:100%">
+               
+              </div>
+              <div class="mySlides fade">
+              
+                  <img src="images/image_6.jpg" style="width:100%">
+               
+              </div>
+          
+              
+          
+              
+              <a class="prev" onclick="plusSlides(-1)">&#10094;&#10094;&#10094;</a>
+              
+              <a class="next" onclick="plusSlides(1)">&#10095;&#10095;&#10095;</a>
+          
+              </div>
+            </div>
+    <script>
+           var myIndex = 0;
+carousel();
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none"; 
+               
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+     
+        function carousel(n) {
+            var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 7000); 
+        }
+        </script>
+        
+  <br><br><br><br><br>
+  <br>
+  <!-- <div class="section" id="home"><br><br><br><br</br><br><br><br><br><br><br><br><br</br><br><br><br><br><br><br><br><br</br><br><br><br><br><br><br><br><br</br><br><br><br><br><div id="shape"></div></div>
+  <div class="section" id="uberuns">
+    <div id="shape"></div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error culpa ipsa quibusdam eaque illo hic provident. Delectus accusamus, fuga cumque minus accusantium, ex expedita dolores sapiente quia ullam ipsa provident.
+  </div> -->
+
+
+
+  <div class="row">
+    <div class="column">
+      <img src="images_2/pic_4.jpeg" style="float: left;">
+    </div>
+    <div class="column">
+      <img src="images_2/pic_5.jpeg" style="float: left;">
+    </div>
+    <div class="column">
+      <img src="images_2/pic_6.jpeg" style="float: left;">
+    </div>
+  </div>
+  
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br><br>
+
+  
+
+  
+  
+    <section class="text-gray-50bg-gray-90 body-font" style="opacity: 1;">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4">
+          <div class="lg:w-1/2 lg:mb-0 mb-6 p-4">
+            <div class="h-full text-center">
+              <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800" src="images/sachin.jpg">
+              <p class="leading-relaxed">“A champion team needs only a small window of opportunity <br> to stage a fightback, something <br> I had learnt over the years.”</p>
+              <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+              <h2 class="text-black font-medium title-font tracking-wider text-sm">Sachin Tendulkar</h2>
+              <p class="text-gray-600">International Cricketer</p>
+            </div>
+          </div>
+          <div class="lg:w-1/2 lg:mb-0 mb-6 p-4">
+            <div class="h-full text-center">
+              <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800" src="images/anand.jpg">
+              <p class="leading-relaxed">"Confidence is very important – even pretending to be confident. <br> If you make a mistake but do not let your opponent see what you are thinking <br> then he may overlook the mistake."</p>
+              <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+              <h2 class="text-black font-medium title-font tracking-wider text-sm">Viswanathan Anand</h2>
+              <p class="text-gray-600">Indian Chess Grandmaster</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+  <div class="parallax">
+    <!-- <div class="container-video" > 
+      <iframe class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+    </div> -->
+    
+  </div>
+  <!-- <div class="cross1">
+    
+  </div>
+ -->
+
+<!-- <div style="height:1000px;background-color:black;color:white;font-size:36px">
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div> -->
+
+
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lo
+
+
+
+  <section class="counters">
+    <div class="container">
+        <div>
+            <i class="fab fa-youtube fa-4x"></i>
+            <div class="counter" data-target="2000">0</div>
+            <div class="counter-plus">+</div>
+            <h3>Subscribers</h3>
+        </div>
+        <div>
+            <i class="fab fa-twitter fa-4x"></i>
+            <div class="counter" data-target="1500">0</div>
+            <div class="counter-plus">+</div>
+            <h3>Followers</h3>
+        </div>
+        <div>
+            <i class="fab fa-facebook fa-4x"></i>
+            <div class="counter" data-target="1700">0</div>
+            <div class="counter-plus">+</div>
+            <h3>Likes</h3>
+        </div>
+        <div>
+            <i class="fab fa-linkedin fa-4x"></i>
+            <div class="counter" data-target="1300">0</div>
+            <div class="counter-plus">+</div>
+            <h3>Connections</h3>
+        </div>
+    </div>
+</section>
+
+<div class="parallax">
+  <!-- <div class="container-video" > 
+    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+  </div> -->
+  
+</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.443223785838!2d73.02328961472912!3d19.044240787106105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3db0123a8b9%3A0x499e9208cc80859b!2sRamrao%20Adik%20Institute%20of%20Technology%20Nerul!5e0!3m2!1sen!2sin!4v1597782292689!5m2!1sen!2sin"
+ width="600" height="450" frameborder="0" style="border: 1px solid blue;margin-left: 33%;border-radius: 5%;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<br><br>
+<script>
+        window.addEventListener('scroll', () =>{
+          const counters = document.querySelectorAll('.counter');
+const speed = 4; // The lower the slower
+
+counters.forEach(counter => {
+	const updateCount = () => {
+		const target = +counter.getAttribute('data-target');
+		const count = +counter.innerText;
+
+		// Lower inc to slow and higher to slow
+		const inc = target / speed;
+
+		// console.log(inc);
+		// console.log(count);
+
+		// Check if target is reached
+		if (count < target) {
+			// Add inc to count and output in counter
+			counter.innerText = count + speed;
+			// Call function every ms
+			setTimeout(updateCount, 1);
+		} else {
+			counter.innerText = target;
+		}
+	};
+
+	updateCount();
+});
+        });
+    
+
+</script>
+
+
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcamet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quos. Recusandae animi voluptas minus, cum quod ipsam amet architecto praesentium ab assumenda labore nostrum. Molestias voluptatibus obcaecati tenetur error dolore.
+</div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>
